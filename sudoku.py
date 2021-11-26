@@ -1,13 +1,3 @@
-# 1. Name:
-#      William Heaven
-# 2. Assignment Name:
-#      Lab 05 : Sudoku Draft
-# 3. Assignment Description:
-#      This program is meant to play the game of Sudoku
-# 4. What was the hardest part? Be as specific as possible.
-#      The hardest part for me was trying to maintain good coupling between my functions. 
-# 5. How long did it take for you to complete the assignment?
-#      3.5 hours
 import json
 
 def read_board():
@@ -254,7 +244,7 @@ def main():
     """The game of Sudoku"""
     board = read_board()
     # as long as the user does not want to quit and the board is not solved continue playing. 
-    # Once either of thos conditions are True save the board and indicate to the user it has been saved. 
+    # Once either of those conditions are True save the board and indicate to the user it has been saved. 
     valid = False
     while not valid:
         board, valid = play_game(board)
